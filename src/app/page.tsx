@@ -22,7 +22,7 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          For the past few years, I&apos;ve been working with React, TypeScript.
+          I&apos;m Frontend Engineer. For the past few years, I&apos;ve been working with React, TypeScript.
         </p>
         <p>
           I worked in a large product team. Before that,

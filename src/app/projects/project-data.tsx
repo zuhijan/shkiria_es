@@ -8,7 +8,8 @@ export interface Project {
   description: string;
   url?: string;
   source?: string;
-  tools?: string[]
+  tools?: string[];
+  img: string;
 }
 
 export const projects: Project[] = [
@@ -18,6 +19,7 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "",
+    img: '/projects/edna.png'
   },
   {
     title: "Sportspace",
@@ -25,13 +27,17 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
-    title: "Yandex.Practicum",
+    title: "Mentoring at Yandex.Practicum",
     year: [2022, 2023],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "Stellar Burgers",
@@ -39,6 +45,8 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "Siemens",
@@ -46,6 +54,8 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "Fedot",
@@ -53,6 +63,8 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "Car4U",
@@ -60,6 +72,7 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
   },
   {
     title: "Хакатоны - Tele2/Школа будущих СТО ",
@@ -67,6 +80,8 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "Nikol",
@@ -74,6 +89,8 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "Raklechitca",
@@ -81,6 +98,8 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "news-explorer + news.explorer.api",
@@ -88,6 +107,8 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "bestbuddies",
@@ -95,6 +116,8 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },
   {
     title: "Agung Agency",
@@ -102,11 +125,15 @@ export const projects: Project[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://example.com/",
+    img: '/projects/edna.png'
+
   },{
     title: "verimtebe",
     year: [2019],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
     url: "https://verimtebe.ru/",
+    img: '/projects/edna.png'
+
   },
 ];
