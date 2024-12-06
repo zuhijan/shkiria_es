@@ -1,0 +1,13 @@
+{
+  "greeting": "Olá, sou o Egor! 👋",
+  "intro": "Sou engenheiro Frontend. Nos últimos anos, tenho trabalhado com React e TypeScript.",
+  "experience": [
+    "Trabalhei em uma grande equipe de produtos. Antes disso,",
+    "Tive experiência tanto em uma startup quanto em uma empresa de e-commerce.",
+    "Comecei com projetos para organizações sem fins lucrativos."
+  ],
+  "skills": "Tenho facilidade com layouts adaptativos, configuração do Webpack, CI/CD e escrita de testes.",
+  "additional": "Também trabalhei com Node.js/Express.js/WebSockets. Tenho experiência em mentoria.",
+  "values": "Valorizo transparência, abertura e sempre busco resultados em meu trabalho.",
+  "projects": "projetos"
+}

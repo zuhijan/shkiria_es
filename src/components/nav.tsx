@@ -1,12 +1,15 @@
-import Link from "next/link";
-import { ThemeSwitch } from "./theme-switch";
-import { metaData } from "@/config";
+import { ThemeSwitch } from './theme-switch';
+import { metaData } from '@/config';
+import { LanguageSwitcher } from '@/components/language-switcher';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 const navItems = {
-  "/projects": { name: "Projects" },
+  '/projects': { name: 'projects' },
 };
 
-export function Navbar() {
+export function Navbar({ lang }: { lang: string }) {
+  const t = useTranslations();
   return (
     <nav className="lg:mb-16 mb-12 py-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
@@ -22,10 +25,11 @@ export function Navbar() {
               href={path}
               className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
             >
-              {name}
+              {t(name)}
             </Link>
           ))}
           <ThemeSwitch />
+          <LanguageSwitcher currentLang={lang} />
         </div>
       </div>
     </nav>
