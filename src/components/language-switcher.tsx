@@ -3,6 +3,7 @@
 import { useRouter, usePathname } from 'next/navigation';
 import { useCallback } from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/ui/select';
+import { cn } from '@/lib/utils';
 
 type Language = {
   code: string;
@@ -42,15 +43,19 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLang 
 
   return (
     <Select onValueChange={switchLanguage} defaultValue={currentLang}>
-      <SelectTrigger className={`bg-background text-foreground border-primary w-[80px]`}>
-        <span className="mr-2">{currentLanguage.flag}</span>
-        <span>{currentLanguage.shortName}</span>
+      <SelectTrigger className={`bg-background text-foreground border-primary w-[50px]`}>
+        <span className="mr-2 mt-1">{currentLanguage.flag}</span>
+        <span>{currentLanguage.code}</span>
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className={'bg-[#F7F7F7] dark:bg-[#181818]'}>
         {languages.map((lang) => (
-          <SelectItem key={lang.code} value={lang.code}>
+          <SelectItem
+            className={cn(currentLanguage.code === lang.code && 'bg-gray-300 dark:bg-gray-950')}
+            key={lang.code}
+            value={lang.code}
+          >
             <span className="mr-2">{lang.flag}</span>
-            {lang.shortName}
+            {lang.code}
           </SelectItem>
         ))}
       </SelectContent>
